@@ -12,6 +12,7 @@ import notify
 import matching
 import daemon
 import schedule
+import dialog
 
 class App:
   def __init__(self):
@@ -62,6 +63,7 @@ def main():
   core_app.shutdown()
   app = App()
   daemon.start_daemon(schedule.schedules)
+  dialog.start_timer()
   # Register handler for keyboard interrupts
   signal.signal(signal.SIGINT, signal_handler)
   print("Running... Press Ctrl+C to exit.")

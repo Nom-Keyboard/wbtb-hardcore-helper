@@ -32,6 +32,5 @@ in addition to use just this app, u should also
 
 1. record ur dreams by placing a pen and a notebook on ur bed beside u
 2. MILD and WBTB
-3. do reality checks from time to time
-4. self-prompting
+3. self-prompting
 ... maybe more ...
