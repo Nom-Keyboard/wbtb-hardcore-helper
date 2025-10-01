@@ -6,7 +6,7 @@ this app give u 12h of sleep per day, while u can selectively ignore some if u t
 
 purpose is to maximize amount of time to sleep in a day with short duration, so more chances to lucid dream
 
-this app will always pop a notification upon start up to let u know where on the schedule table ur currently at
+this app will always pop a notification upon starting up or waking from sleep to let u know where on the schedule table ur currently at
 
 it also pop notifications at 1hr and 30min before each sleep time
 

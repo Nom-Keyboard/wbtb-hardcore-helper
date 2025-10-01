@@ -11,6 +11,7 @@ from gi.repository import GLib
 from dbus.mainloop.glib import DBusGMainLoop
 
 import notify
+import matching
 
 def callback(event_name):
     notify.show(f"⏰️ Reaching time: {event_name}")
@@ -37,6 +38,7 @@ def handle_sleep_signal(sleeping_now):
             last_checked = datetime.datetime.now()
             sleeping = sleeping_now
         print(f"[{format_now()}] System just woke up!")
+        notify.show(matching.format_current())
 
 def time_watcher(schedules):
     global last_checked
