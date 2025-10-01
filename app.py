@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 
 import sys
+import signal
 
 from PySide6.QtWidgets import QApplication, QWidget
 from PySide6.QtCore import QCoreApplication, QCommandLineParser
@@ -39,6 +40,10 @@ class App:
   def show_startup_notification(self):
     notify.show(matching.format_current())
 
+def signal_handler(sig, frame):
+    print("\nCtrl+C detected! Exiting gracefully...")
+    sys.exit(0)
+
 def main():
   # Set application info for --help output
   core_app = QCoreApplication(sys.argv)
@@ -57,6 +62,9 @@ def main():
   core_app.shutdown()
   app = App()
   daemon.start_daemon(schedule.schedules)
+  # Register handler for keyboard interrupts
+  signal.signal(signal.SIGINT, signal_handler)
+  print("Running... Press Ctrl+C to exit.")
   app.run()
 
 if __name__ == '__main__':
