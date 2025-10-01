@@ -2,7 +2,7 @@ entry point: app.py
 
 currently tested on only archlinux with KDE
 
-this app give u 12h of sleep per day, while u can selectively ignore some if u think u have enough sleep
+this app give u 12h of sleep per day, 8 sleep and 1.5h of each, then u wake up for 1.5h before going to bed again. (while u can selectively ignore some if u think u have enough sleep)
 
 purpose is to maximize amount of time to sleep in a day with short duration, so more chances to lucid dream
 
@@ -31,6 +31,5 @@ u should also add these 8 alarms on ur own phone
 in addition to use just this app, u should also
 
 1. record ur dreams by placing a pen and a notebook on ur bed beside u
-2. MILD and WBTB
-3. self-prompting
+2. MILD
 ... maybe more ...
