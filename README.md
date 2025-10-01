@@ -13,12 +13,19 @@ it also pop notifications at 1hr and 30min before each sleep time
 u should also add these 8 alarms on ur own phone
 
 > 01:30 am - get up
+>
 > 04:30 am - get up
+>
 > 07:30 am - get up
+>
 > 10:30 am - get up
+>
 > 13:30 pm - get up
+>
 > 16:30 pm - get up
+>
 > 19:30 pm - get up
+>
 > 22:30 pm - get up
 
 in addition to use just this app, u should also
