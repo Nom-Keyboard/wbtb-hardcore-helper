@@ -9,6 +9,8 @@ import tray
 import window
 import notify
 import matching
+import daemon
+import schedule
 
 class App:
   def __init__(self):
@@ -54,6 +56,7 @@ def main():
 
   core_app.shutdown()
   app = App()
+  daemon.start_daemon(schedule.schedules)
   app.run()
 
 if __name__ == '__main__':
