@@ -3,6 +3,7 @@
 import sys
 
 from PySide6.QtWidgets import QApplication, QWidget
+from PySide6.QtCore import QCoreApplication, QCommandLineParser
 
 import tray
 import window
@@ -37,6 +38,21 @@ class App:
     notify.show(matching.format_current())
 
 def main():
+  # Set application info for --help output
+  core_app = QCoreApplication(sys.argv)
+  core_app.setApplicationName("Reminder App")
+  core_app.setApplicationVersion("0.1")
+
+  # Create CLI parser
+  parser = QCommandLineParser()
+  parser.setApplicationDescription("Reminder App")
+  parser.addHelpOption()
+  parser.addVersionOption()
+
+  # Process the actual command-line arguments
+  parser.process(core_app)
+
+  core_app.shutdown()
   app = App()
   app.run()
 
